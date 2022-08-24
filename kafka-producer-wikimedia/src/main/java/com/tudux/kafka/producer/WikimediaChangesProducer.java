@@ -23,6 +23,7 @@ public class WikimediaChangesProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
+    //To consumer from console: .\kafka-console-consumer.bat --topic wikimedia_recentchange --from-beginning --bootstrap-server localhost:9092
     public void sendMessage() throws InterruptedException {
 
         String topic = "wikimedia_recentchange";
